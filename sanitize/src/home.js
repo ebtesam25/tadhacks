@@ -14,8 +14,8 @@ class Home extends Component {
   } 
 //   componentDidMount(){
 //     sdk.init({
-//         appId: '687a6a325630305736476f47707536625255547334593175716d7a4c67655033',
-//         appSecret: '4b673743476f326333766554496e4d4370592d2d704370775a5948323568662d644c356579556544515871455177354f3271384349396a5f326a5952596a6f6e',
+//         appId: '##',
+//         appSecret: '##',
 //         basePath: 'https://api.symbl.ai'
 //       })
 //       .then(() => console.log('SDK Initialized.'))
