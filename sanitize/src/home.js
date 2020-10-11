@@ -11,6 +11,8 @@ import HomeImg from './welcome.png';
 class Home extends Component {
   constructor(props) {
     super(props);
+    this.state=({on:false})
+    
   } 
 //   componentDidMount(){
 //     sdk.init({
@@ -38,11 +40,13 @@ class Home extends Component {
                 </div>
                 <div style={{ marginRight:"25%"}}>
               
-                <Link style={{textDecoration:'none'}} to="/login">
+             
                
-                <div style={{fontFamily:"Montserrat", lineHeight:"100%", fontSize:"2vh", marginTop: "25%", color:'#FFF',backgroundColor:"#6c63ff", width:'75%', paddingTop:'5%', paddingBottom:'5%', borderRadius:20, marginLeft:'29%'}}>
+                <div onClick={()=>this.setState({on:true})} style={{fontFamily:"Montserrat", lineHeight:"100%", fontSize:"2vh", marginTop: "25%", color:'#FFF',backgroundColor:"#6c63ff", width:'75%', paddingTop:'5%', paddingBottom:'5%', borderRadius:20, marginLeft:'29%'}}>
                 Send
-                </div> </Link>
+                </div> 
+                {this.state.on &&
+                <div> Powered on</div>}
                 </div>
                 </div>
               <div style={{float: "right", marginTop:'10%', marginRight:'5%'}}><img src={HomeImg} alt="home" height="600vh"></img></div>
